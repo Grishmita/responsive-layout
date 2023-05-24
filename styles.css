@@ -1,0 +1,98 @@
+header{
+    grid-column: 1/-1;
+    grid-template-columns: 1.7fr 1fr 1fr 1fr;
+    display: grid;
+    gap: 20px;
+}
+.banner {
+    background: #797977;
+    grid-column: 1/-1;
+}
+.main-con{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+footer{
+    background: blue;
+    grid-column: 1/-1;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1.5fr 1fr 1.5fr;
+    gap: 20px;
+    width: 95%;
+    margin: 0 auto;
+
+}
+.header2 {
+    grid-column: 2/-1;
+    background: #ababa9;
+}
+.header1{
+    background-color: #639fcd;
+}
+header > div {
+    background: grey;
+}
+.main-con > div {
+    background: #b2d5e8;
+    padding: 100px;
+}
+footer {
+    background: #c5c6c0;
+    padding: 100px;
+}
+
+
+
+
+/*----------------------------- Large Screen - 1 -------------------------------*/
+@media only screen and (max-width :1700px) and (min-width: 1367px) {
+    
+}
+
+/*----------------------------- Large Screen - 2 -------------------------------*/
+@media only screen and (max-width :1366px) and (min-width: 1281px) {
+
+}
+
+/*----------------------------- Small Laptop -------------------------------*/
+@media only screen and (max-width :1280px) and (min-width: 1101px) {
+
+}
+
+/*----------------------------- Media 1024 -------------------------------*/
+@media only screen and (max-width :1100px){
+
+}
+
+
+/*----------------------------- Media 768 -------------------------------*/
+@media only screen and (max-width:999px){
+
+		
+}
+
+/*----------------------------- Media 480 -------------------------------*/
+@media only screen and (max-width:767px){
+    .main-con {
+        grid-template-columns: 1fr;
+    }
+    .parent {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr;
+    }
+    
+
+}
+
+
+/*----------------------------- Media 320 -------------------------------*/
+@media only screen and (max-width:479px){
+
+
+}
